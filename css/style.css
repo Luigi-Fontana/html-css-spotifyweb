@@ -1,15 +1,12 @@
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+    color: white;
 }
 
 body {
     overflow-x: hidden;
 }
-
-aside {
-    background-color: grey;
-}
-
+/* da eliminare */
 header {
     background-color: pink;
 }
@@ -26,9 +23,77 @@ footer {
 aside {
     width: 150px;
     height: calc(100vh - 60px);
+    background-color: #003140;
     position: fixed;
     top: 0;
     left: 0;
+}
+
+.flex-aside {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#aside-logo {
+    width: 100px;
+    margin-top: 20px;
+}
+
+.aside-top ul {
+    list-style: none;
+}
+
+nav li {
+    margin: 20px 0;
+}
+
+.aside-top i {
+    color: lightgrey;
+    margin-right: 10px;
+}
+
+.aside-top p {
+    font-size: 12px;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline;
+}
+
+aside h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.playlist i {
+    font-size: 20px;
+}
+
+.install {
+    justify-content: center;
+    padding: 5px 0;
+}
+
+.install p {
+    font-size: 10px;
+     -moz-osx-font-smoothing: grayscale;
+}
+
+.install i {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.creator {
+    width: 130px;
+    border-top: 1px solid #f3ad2e;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+#profile {
+    width: 20px;
+    margin-right: 10px;
 }
 
 header {

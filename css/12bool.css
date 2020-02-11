@@ -19,6 +19,10 @@
     float: left;
 }
 
+.flex-container {
+    display: flex;
+}
+
 /* MOBILE */
 
 .col-xs-1 {
