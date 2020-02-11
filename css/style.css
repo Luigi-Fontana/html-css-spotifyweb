@@ -1,3 +1,55 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+
+body {
+    overflow-x: hidden;
+}
+
+aside {
+    background-color: grey;
+}
+
+header {
+    background-color: pink;
+}
+
+main {
+    background-color: lightgrey;
+    padding: 100px;
+}
+
+footer {
+    background-color: lightblue;
+}
+
+aside {
+    width: 150px;
+    height: calc(100vh - 60px);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header {
+    width: calc(100vw - 150px);
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 150px;
+}
+
+main {
+    width: calc(100vw - 150px);
+    height: calc(100% - 120px);
+    margin-top: 60px;
+    margin-left: 150px;
+}
+
+footer {
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
