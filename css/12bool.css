@@ -23,6 +23,14 @@
     display: flex;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
 /* MOBILE */
 
 .col-xs-1 {
