@@ -6,10 +6,6 @@
 body {
     overflow-x: hidden;
 }
-/* da eliminare */
-main {
-    padding: 100px;
-}
 /* ASIDE TAG GENERICI*/
 aside {
     width: 200px;
@@ -218,21 +214,42 @@ header {
     border: 3px solid #f3ad2e;
     transform: scale(1.1);
 }
-
+/* MAIN TAG GENERICI */
 main {
     width: calc(100% - 200px);
-    height: calc(100% - 100px);
-    background-color: #181818;
+    height: 2000px;
+    /* height: calc(100% - 100px); */
+    background-color: #111111;
     margin-left: 200px;
 }
 
-main p {
+.navbar-main {
+    padding-top: 90px;
+}
+
+.navbar-main ul {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-main li {
     color: lightgrey;
+    margin: 0 20px;
+    padding: 10px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #111111;
+    transition-duration: 0.2s;
+}
+
+.navbar-main li:hover {
+    color: #fff;
+    border-bottom: 2px solid #f3ad2e;
 }
 
 main label {
     font-size: 20px;
     color: #f3ad2e;
+    display: block;
 }
 /* FOOTER TAG GENERICI */
 footer {
@@ -273,17 +290,37 @@ input[name="r"] {
 }
 
 .rel-img img {
-    margin: 10px 10px 6px 60px;
+    margin: 20px 20px 16px 60px;
     border-radius: 10px;
 }
 .rel-text h4 {
-    font-size: 16px;
-    padding-bottom: 10px;
+    font-size: 14px;
+    padding-bottom: 2px;
 }
 
 .rel-text p {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
+}
+
+.rel-like {
+    margin-left: 30px;
+}
+
+.rel-like i,
+.play-settings i {
+    font-size: 12px;
+    color: grey;
+    margin-left: 10px;
+    transition-duration: 0.2s;
+}
+
+.fa-heart:active {
+    color: darkred;
+}
+
+.fa-folder-plus:hover {
+    color: #fff;
 }
 /* SPOSTAMENTO MARGINI CON CHECKED */
 #r1:checked ~ .rel-slide{
@@ -316,4 +353,69 @@ input[name="r"] {
 
 #r8:checked ~ .rel-slide{
     margin-top: -700px;
+}
+/* PLAYER */
+.player {
+    display: flex;
+    flex-direction: column;
+}
+
+.player-top {
+    display: flex;
+    justify-content: center;
+}
+
+.player-top i {
+    margin: 0 15px 10px;
+    color: lightgrey;
+    transition-duration: 0.2s;
+}
+
+.player-top i:hover,
+.play-settings i:hover {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.player-top i:active,
+.play-settings i:active,
+.rel-like i:active {
+    transform: scale(1.2);
+}
+
+.player-bottom span {
+    color: lightgrey;
+    font-size: 10px;
+}
+
+.player-line {
+    width: 300px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.player-line:hover,
+.settings-line:hover,
+.rel-like i:hover {
+    cursor: pointer;
+}
+/* PLAY SETTINGS */
+.play-settings {
+    display: flex;
+    align-items: center;
+}
+
+.play-settings i {
+    margin-right: 10px;
+}
+
+.settings-line {
+    width: 100px;
+    border: 1px solid lightgrey;
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 30px;
+    margin-left: 10px;
 }
