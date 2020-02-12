@@ -6,6 +6,10 @@
 body {
     overflow-x: hidden;
 }
+
+.container {
+    width: 95%;
+}
 /* ASIDE TAG GENERICI*/
 aside {
     width: 200px;
@@ -40,7 +44,7 @@ aside p {
 /* LOGO E NAVBAR */
 #aside-logo {
     width: 150px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 nav li {
@@ -223,6 +227,28 @@ main {
     margin-left: 200px;
 }
 
+main h2 {
+    letter-spacing: 1px;
+    margin-top: 50px;
+}
+
+main h3 {
+    font-size: 12px;
+    font-weight: 300;
+    color: grey;
+    margin-top: 10px;
+}
+
+main h4 {
+    font-size: 14px;
+    margin: 10px 0;
+}
+main p {
+    color: grey;
+    font-weight: 300;
+    font-size: 12px;
+}
+/* NAVBAR MAIN */
 .navbar-main {
     padding-top: 90px;
 }
@@ -232,8 +258,11 @@ main {
     justify-content: center;
 }
 
-.navbar-main li {
+.navbar-main a {
     color: lightgrey;
+}
+
+.navbar-main li {
     margin: 0 20px;
     padding: 10px;
     letter-spacing: 1px;
@@ -242,8 +271,62 @@ main {
 }
 
 .navbar-main li:hover {
-    color: #fff;
     border-bottom: 2px solid #f3ad2e;
+}
+/* CARD */
+.wrapper {
+    display: flex;
+    margin-top: 30px;
+}
+
+.card {
+    width: 300px;
+    background-color: #000f18;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition-duration: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.card:hover .overlay {
+    opacity: 0.1;
+}
+
+.card:hover i {
+    opacity: 1;
+}
+
+.img-hover {
+    position: relative;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition-duration: 0.5s;
+    background-color: #f3ad2e;
+    opacity: 0;
+}
+
+.card i {
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
 }
 
 main label {
@@ -259,6 +342,7 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
+    border-top: 1px solid gray;
 }
 
 .flex-footer {
@@ -291,7 +375,7 @@ input[name="r"] {
 
 .rel-img img {
     margin: 20px 20px 16px 60px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .rel-text h4 {
     font-size: 14px;
