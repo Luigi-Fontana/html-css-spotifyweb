@@ -229,7 +229,7 @@ main {
 
 main h2 {
     letter-spacing: 1px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 main h3 {
@@ -241,12 +241,14 @@ main h3 {
 
 main h4 {
     font-size: 14px;
-    margin: 10px 0;
+    margin: 10px 10px 5px;
 }
+
 main p {
     color: grey;
     font-weight: 300;
     font-size: 12px;
+    margin: 0 10px 10px;
 }
 /* NAVBAR MAIN */
 .navbar-main {
@@ -276,14 +278,14 @@ main p {
 /* CARD */
 .wrapper {
     display: flex;
-    margin-top: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .card {
-    width: 300px;
+    width: 150px;
     background-color: #000f18;
-    margin: 0 10px;
-    padding: 10px;
+    margin: 10px 10px;
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
@@ -292,18 +294,6 @@ main p {
 
 .card:hover {
     transform: scale(1.1);
-}
-
-.card img {
-    max-width: 100%;
-}
-
-.card:hover .overlay {
-    opacity: 0.1;
-}
-
-.card:hover i {
-    opacity: 1;
 }
 
 .img-hover {
@@ -320,19 +310,49 @@ main p {
 }
 
 .card i {
-    font-size: 80px;
-    color: white;
+    font-size: 60px;
+    color: lightgrey;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     opacity: 0;
+    transition-duration: 0.2s;
 }
 
-main label {
-    font-size: 20px;
-    color: #f3ad2e;
+.card img {
+    max-width: 100%;
     display: block;
+}
+
+.card:hover .overlay {
+    opacity: 0.5;
+}
+
+.card:hover i {
+    opacity: 1;
+}
+
+.card i:active {
+    color: #fff;
+}
+/* WRP ARTIST */
+#card-artist {
+    width: 120px;
+    background-color: #111111;
+}
+
+#card-artist img {
+    border-radius: 50%;
+}
+
+#card-artist i {
+    font-size: 25px;
+}
+
+#card-artist h4 {
+    letter-spacing: 1px;
+    margin-top: 20px;
 }
 /* FOOTER TAG GENERICI */
 footer {
@@ -374,6 +394,8 @@ input[name="r"] {
 }
 
 .rel-img img {
+    width: 60px;
+    height: 60px;
     margin: 20px 20px 16px 60px;
     border-radius: 5px;
 }
