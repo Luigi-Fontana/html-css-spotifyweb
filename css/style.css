@@ -21,6 +21,7 @@ aside {
 }
 
 .flex-aside {
+    width: 100%;
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
@@ -229,6 +230,11 @@ main p {
     color: lightgrey;
 }
 
+main label {
+    font-size: 20px;
+    color: #f3ad2e;
+}
+/* FOOTER TAG GENERICI */
 footer {
     width: 100%;
     height: 100px;
@@ -236,4 +242,78 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
+}
+
+.flex-footer {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+/* REL MAIN */
+.rel-main{
+    height: 800px;
+    overflow: hidden;
+    align-self: flex-start;
+}
+
+.rel-navigation {
+    height: 800px;
+    display: flex;
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+/* REL CONT */
+.rel-cont {
+    display: flex;
+    align-items: center;
+}
+
+.rel-img img {
+    margin: 10px 10px 6px 60px;
+    border-radius: 10px;
+}
+.rel-text h4 {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.rel-text p {
+    font-size: 14px;
+    font-weight: 300;
+}
+/* SPOSTAMENTO MARGINI CON CHECKED */
+#r1:checked ~ .rel-slide{
+    margin-top: 0;
+}
+
+#r2:checked ~ .rel-slide{
+    margin-top: -100px;
+}
+
+#r3:checked ~ .rel-slide{
+    margin-top: -200px;
+}
+
+#r4:checked ~ .rel-slide{
+    margin-top: -300px;
+}
+
+#r5:checked ~ .rel-slide{
+    margin-top: -400px;
+}
+
+#r6:checked ~ .rel-slide{
+    margin-top: -500px;
+}
+
+#r7:checked ~ .rel-slide{
+    margin-top: -600px;
+}
+
+#r8:checked ~ .rel-slide{
+    margin-top: -700px;
 }
