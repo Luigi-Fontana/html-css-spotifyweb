@@ -209,12 +209,13 @@ header {
 .flex-header {
     width: 100%;
     height: 100%;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 }
 /* ARROW */
 .arrow {
     margin-left: 30px;
+    display: none;
 }
 
 .arrow i {
@@ -232,11 +233,15 @@ header {
     left: 2px;
 }
 /* SIGN */
+.sign {
+    margin-right: 20px;
+}
+
 .sign button {
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 3px;
-    padding: 8px 40px;
+    padding: 8px 20px;
     border-radius: 100px;
     border: 3px solid #000f18;
     transition-duration: 0.2s;
@@ -255,7 +260,6 @@ header {
 
 .btn-sign-in {
     color: #000f18;
-    margin-right: 100px;
 }
 
 .btn-sign-in:hover {
@@ -650,6 +654,18 @@ input[name="r"] {
         width: calc(100% - 200px);
         left: 200px;
     }
+    .flex-header {
+        justify-content: space-between;
+    }
+    .arrow {
+        display: block;
+    }
+    .sign {
+        margin-right: 50px;
+    }
+    .sign button {
+        padding: 8px 40px;
+    }
     main {
         width: calc(100% - 200px);
         margin-left: 200px;
@@ -680,6 +696,9 @@ input[name="r"] {
 }
 
 @media screen and (min-width: 992px) {
+    .sign {
+        margin-right: 100px;
+    }
     .rel-cont {
         width: 300px;
     }
