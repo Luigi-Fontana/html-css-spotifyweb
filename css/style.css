@@ -51,7 +51,7 @@ aside {
 aside p {
     font-weight: 300;
 }
-
+/* LOGO E NAVBAR */
 .aside-top i {
     color: lightgrey;
     margin-left: 9px;
@@ -61,7 +61,7 @@ aside p {
     font-size: 14px;
     display: none;
 }
-/* LOGO E NAVBAR */
+
 #aside-logo-desk {
     width: 150px;
     margin-top: 20px;
@@ -88,7 +88,6 @@ nav li:hover i {
 nav li:hover p {
     font-weight: 400;
 }
-
 /* PLAYLIST */
 .playlist {
     border-top: 1px solid #f3ad2e;
@@ -277,26 +276,27 @@ main {
 }
 
 main h2 {
+    font-size: 18px;
     letter-spacing: 1px;
     margin-top: 30px;
 }
 
 main h3 {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 300;
     color: grey;
     margin-top: 10px;
 }
 
 main h4 {
-    font-size: 14px;
+    font-size: 12px;
     margin: 10px 10px 5px;
 }
 
 main p {
     color: grey;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 10px;
     margin: 0 10px 10px;
 }
 /* NAVBAR MAIN */
@@ -315,6 +315,7 @@ main p {
 }
 
 .navbar-main li {
+    font-size: 12px;
     margin: 0 20px;
     padding: 10px;
     letter-spacing: 1px;
@@ -333,7 +334,7 @@ main p {
 }
 
 .card {
-    width: 150px;
+    width: 100px;
     margin: 10px 10px;
     border-radius: 10px;
     overflow: hidden;
@@ -445,7 +446,7 @@ input[name="r"] {
     position: absolute;
     visibility: hidden;
 }
-/* REL CONT */
+
 .rel-cont {
     width: 260px;
     display: flex;
@@ -487,7 +488,7 @@ input[name="r"] {
 .fa-folder-plus:hover {
     color: #fff;
 }
-/* SPOSTAMENTO MARGINI CON CHECKED */
+/* SPOSTAMENTO MARGINI */
 #r1:checked ~ .rel-slide{
     margin-top: 0;
 }
@@ -577,7 +578,7 @@ input[name="r"] {
 .play-settings i {
     margin-right: 10px;
 }
-/* BARRA VOLUME */
+
 .slidecontainer {
     width: 100%;
     position: relative;
@@ -602,13 +603,31 @@ input[name="r"] {
     cursor: pointer;
     border-radius: 50%;
 }
-
+/* MEDIA QUERY MOBILE "PRO" */
 @media screen and (min-width: 540px) {
     aside {
         height: calc(100% - 100px);
     }
     main {
         margin-bottom: 100px;
+    }
+    main h2 {
+        font-size: 20px;
+    }
+    main h3 {
+        font-size: 11px;
+    }
+    main h4 {
+        font-size: 13px;
+    }
+    main p {
+        font-size: 11px;
+    }
+    .navbar-main li {
+        font-size: 14px;
+    }
+    .card {
+        width: 120px;
     }
     footer {
         height: 100px;
@@ -620,7 +639,7 @@ input[name="r"] {
         margin-top: 0;
     }
 }
-
+/* MEDIA QUERY TABLET */
 @media screen and (min-width: 768px) {
     aside {
         width: 200px;
@@ -670,6 +689,24 @@ input[name="r"] {
         width: calc(100% - 200px);
         margin-left: 200px;
     }
+    main h2 {
+        font-size: 22px;
+    }
+    main h3 {
+        font-size: 12px;
+    }
+    main h4 {
+        font-size: 14px;
+    }
+    main p {
+        font-size: 12px;
+    }
+    .navbar-main li {
+        font-size: 16px;
+    }
+    .card {
+        width: 150px;
+    }
     .flex-footer {
         justify-content: space-between;
         flex-wrap: nowrap;
@@ -694,7 +731,7 @@ input[name="r"] {
         margin-right: 20px;
     }
 }
-
+/* MEDIA QUERY DESKTOP */
 @media screen and (min-width: 992px) {
     .sign {
         margin-right: 100px;
@@ -710,18 +747,12 @@ input[name="r"] {
         margin-left: 10px;
     }
     .player-line{
-        width: 250px;
+        width: 300px;
     }
     .player-top i {
         margin: 0 15px 10px;
     }
     .play-settings {
         margin-right: 60px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .player-line{
-        width: 300px;
     }
 }
